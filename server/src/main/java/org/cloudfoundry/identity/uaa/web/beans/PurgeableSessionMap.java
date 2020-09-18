@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.stream.Collectors.toList;
 
-@Component
+//@Component
 class PurgeableSessionMap extends ConcurrentHashMap<String, Session> {
     private final static Logger logger = LoggerFactory.getLogger(PurgeableSessionMap.class);
 

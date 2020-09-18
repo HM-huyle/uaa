@@ -11,10 +11,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.session.MapSessionRepository;
 import org.springframework.session.config.annotation.web.http.EnableSpringHttpSession;
 
-@Configuration
+/*@Configuration
 @Conditional(UaaMemorySessionConfig.MemoryConfigured.class)
 @EnableSpringHttpSession
-@EnableScheduling
+@EnableScheduling*/
 public class UaaMemorySessionConfig extends UaaSessionConfig {
 
     private final static Logger logger = LoggerFactory.getLogger(UaaMemorySessionConfig.class);

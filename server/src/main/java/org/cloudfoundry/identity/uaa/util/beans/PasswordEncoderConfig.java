@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -13,6 +14,7 @@ public class PasswordEncoderConfig {
     private static Logger logger = LoggerFactory.getLogger(PasswordEncoderConfig.class);
 
     @Bean
+    @Primary
     public PasswordEncoder nonCachingPasswordEncoder() {
         logger.info("Building BackwardsCompatibleDelegatingPasswordEncoder with {bcrypt} only");
 

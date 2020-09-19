@@ -64,15 +64,17 @@ public class YamlServletProfileInitializer implements ApplicationContextInitiali
     private static final String SECRETS_DIR_VAR = "${SECRETS_DIR}";
 
     static {
-        FILE_CONFIG_LOCATIONS = List.of(
-                "${LOGIN_CONFIG_URL}",
-                "file:${LOGIN_CONFIG_PATH}/login.yml",
-                "file:${CLOUDFOUNDRY_CONFIG_PATH}/login.yml",
-                "${UAA_CONFIG_URL}",
-                "file:${UAA_CONFIG_FILE}",
-                "file:${UAA_CONFIG_PATH}/uaa.yml",
-                "file:${CLOUDFOUNDRY_CONFIG_PATH}/uaa.yml"
-        );
+    FILE_CONFIG_LOCATIONS =
+        List.of(
+            "${LOGIN_CONFIG_URL}",
+            "file:${LOGIN_CONFIG_PATH}/login.yml",
+            "file:${CLOUDFOUNDRY_CONFIG_PATH}/login.yml",
+            "${UAA_CONFIG_URL}",
+            "file:${UAA_CONFIG_FILE}",
+            "file:${UAA_CONFIG_PATH}/uaa.yml",
+            "file:${CLOUDFOUNDRY_CONFIG_PATH}/uaa.yml",
+            "file:D:\\Development\\nc-dp\\auth-server\\src\\main\\resources\\config\\uaa_1.yml",
+            "file:D:\\Development\\nc-dp\\auth-server\\src\\main\\resources\\config\\uaa_2.yml");
     }
 
     @Override

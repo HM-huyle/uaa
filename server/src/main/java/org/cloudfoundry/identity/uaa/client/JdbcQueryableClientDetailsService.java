@@ -23,7 +23,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
-@Component("clientDetailsService")
+@Component("jdbcQueryableClientDetailsService")
 public class JdbcQueryableClientDetailsService
         extends AbstractQueryable<ClientDetails>
         implements QueryableResourceManager<ClientDetails> {

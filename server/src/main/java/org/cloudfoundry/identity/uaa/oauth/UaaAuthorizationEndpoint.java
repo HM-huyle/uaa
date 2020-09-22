@@ -96,11 +96,11 @@ import static org.springframework.security.oauth2.common.util.OAuth2Utils.SCOPE_
  * for redirect responses to be customized, as desired by
  * https://github.com/fhanik/spring-security-oauth/compare/feature/extendable-redirect-generator?expand=1
  */
-@Controller
-@SessionAttributes({
+//@Controller
+/*@SessionAttributes({
         UaaAuthorizationEndpoint.AUTHORIZATION_REQUEST,
         UaaAuthorizationEndpoint.ORIGINAL_AUTHORIZATION_REQUEST
-})
+})*/
 public class UaaAuthorizationEndpoint extends AbstractEndpoint implements AuthenticationEntryPoint {
 
     static final String AUTHORIZATION_REQUEST = "authorizationRequest";

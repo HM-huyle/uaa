@@ -121,7 +121,7 @@ public class ClientAdminEndpoints implements ApplicationEventPublisherAware {
                                 final @Qualifier("jdbcClientDetailsService") ResourceMonitor<ClientDetails> clientDetailsResourceMonitor,
                                 final @Qualifier("approvalStore") ApprovalStore approvalStore,
                                 final @Qualifier("jdbcClientDetailsService") MultitenantClientServices clientRegistrationService,
-                                final @Qualifier("clientDetailsService") QueryableResourceManager<ClientDetails> clientDetailsService,
+                                final @Qualifier("jdbcQueryableClientDetailsService") QueryableResourceManager<ClientDetails> clientDetailsService,
                                 final @Value("${clientMaxCount:500}") int clientMaxCount) {
 
         if (clientMaxCount <= 0) {

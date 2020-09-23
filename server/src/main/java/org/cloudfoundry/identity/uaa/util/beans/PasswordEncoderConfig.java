@@ -14,7 +14,6 @@ public class PasswordEncoderConfig {
     private static Logger logger = LoggerFactory.getLogger(PasswordEncoderConfig.class);
 
     @Bean
-    @Primary
     public PasswordEncoder nonCachingPasswordEncoder() {
         logger.info("Building BackwardsCompatibleDelegatingPasswordEncoder with {bcrypt} only");
 
